@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* body {
+        background-image: url(./1.jpg);
+        background-position: center;
+        background-attachment: fixed;
+    } */
+
+    #email {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    #pwd {
+        margin-top: 10px;
+    }
+
+    .demo {
+        /* text-align: center; */
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 100px;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        font-weight: bold;
+        color: rgb(206, 211, 208);
+
+
+    }
+
+    #button {
+        font-size: 20px;
+        border: solid 2px;
+        /* margin-top: -100px; */
+        /* margin-bottom: 80px; */
+
+    }
+
+    .demo1 {
+        margin-top: -200px;
+        text-align: center;
+    }
+
+    img {
+        border: solid rgb(34, 32, 32) 2px;
+        box-shadow: 2px 2px;
+
+    }
+</style>
+
+<body>
+    <script>
+        const email = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+        const pass = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        function myfun() {
+            var mali = document.getElementById("mail").value
+            var pwd = document.getElementById("pwd").value
+            const json = localStorage.getItem("JSON");
+            const obj = JSON.parse(json);
+
+            // document.write(obj.user);&&pass.test(pwd)
+
+            if (email.test(mali)) {
+                if (mali == obj.email && pwd == obj.pass) {
+                    alert("Successfully Logined")
+                    window.location.assign("home page.html")
+
+                } else {
+                    alert("Incorrect password or mail id")
+                }
+            }
+
+
+        }
+
+            // } else {
+            //     alert("Regular Expression false")
+            // }
+
+    </script>
+
+    <body>
+        <div class="demo">
+
+            <img src="./images/veg fruit 1.jpeg" alt="" height="400" width="747px">
+
+            <div class="demo1">
+                <label> Email:</label>
+                <input type="email" id="mail" size="40px" /><br />
+                <label> password:</label>
+                <input type="password" id="pwd" size="40px" /><br /><br>
+                <input id="button" type="submit" value="click" onclick="myfun()" /><br />
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+           background-color: #5df17d;
+        }
+
+        .menu {
+            margin-left: 660px;
+        }
+        
+
+        .logoname {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .menubar {
+            font-size: 21px;
+        }
+
+        footer {
+            background-color: #38a841;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class=" logoname navbar-brand" href="#">
+                <image src="./images/pngwing.com.png" height="60px" width="60px">Healthy World</image>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" menu collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" menubar navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Demo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./bootstrap.html">fruits</a></li>
+                            <li><a class="dropdown-item" href="table.html">vegetable</a></li>
+
+                            <li><a class="dropdown-item" href="./form.html">Greens</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationTooltip01" autocomplete="off" required>
+            <div class="valid-tooltip">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationTooltip02" autocomplete="off" required>
+            <div class="valid-tooltip">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltipUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" autocomplete="off"
+                    aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                    Please choose a unique and valid username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 position-relative">
+            <label for="validationTooltip03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationTooltip03" autocomplete="off" required>
+            <div class="invalid-tooltip">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 position-relative">
+            <label for="validationTooltip04" class="form-label">State</label>
+            <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Tamil nadu</option>
+                <option>Kerala</option>
+                <option>Delhi</option>
+
+            </select>
+            <div class="invalid-tooltip">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3 position-relative">
+            <label for="validationTooltip05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationTooltip05" autocomplete="off" required>
+            <div class="invalid-tooltip">
+                Please provide a valid zip.
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-success" type="submit"><a href="./home page.html">Submit form</a></button>
+        </div>
+    </form>
+    <marquee direction="lift">
+        <h1>Thank you</h1>
+    </marquee>
+</body>
+
+</html>
